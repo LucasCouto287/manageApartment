@@ -114,15 +114,13 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__icons_icons_component__ = __webpack_require__("../../../../../src/app/icons/icons.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__maps_maps_component__ = __webpack_require__("../../../../../src/app/maps/maps.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__notifications_notifications_component__ = __webpack_require__("../../../../../src/app/notifications/notifications.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__authentication_authentication_component__ = __webpack_require__("../../../../../src/app/authentication/authentication.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__authentication_login_login_component__ = __webpack_require__("../../../../../src/app/authentication/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__financial_financial_component__ = __webpack_require__("../../../../../src/app/financial/financial.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -155,8 +153,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_12__icons_icons_component__["a" /* IconsComponent */],
             __WEBPACK_IMPORTED_MODULE_13__maps_maps_component__["a" /* MapsComponent */],
             __WEBPACK_IMPORTED_MODULE_14__notifications_notifications_component__["a" /* NotificationsComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__authentication_authentication_component__["a" /* AuthenticationComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__authentication_login_login_component__["a" /* LoginComponent */]
+            __WEBPACK_IMPORTED_MODULE_15__financial_financial_component__["a" /* FinancialComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -191,12 +188,14 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__icons_icons_component__ = __webpack_require__("../../../../../src/app/icons/icons.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__maps_maps_component__ = __webpack_require__("../../../../../src/app/maps/maps.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__notifications_notifications_component__ = __webpack_require__("../../../../../src/app/notifications/notifications.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__financial_financial_component__ = __webpack_require__("../../../../../src/app/financial/financial.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -216,6 +215,7 @@ var routes = [
     { path: 'icons', component: __WEBPACK_IMPORTED_MODULE_8__icons_icons_component__["a" /* IconsComponent */] },
     { path: 'maps', component: __WEBPACK_IMPORTED_MODULE_9__maps_maps_component__["a" /* MapsComponent */] },
     { path: 'notifications', component: __WEBPACK_IMPORTED_MODULE_10__notifications_notifications_component__["a" /* NotificationsComponent */] },
+    { path: 'financial', component: __WEBPACK_IMPORTED_MODULE_11__financial_financial_component__["a" /* FinancialComponent */] },
     { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 var AppRoutingModule = (function () {
@@ -235,128 +235,6 @@ AppRoutingModule = __decorate([
 ], AppRoutingModule);
 
 //# sourceMappingURL=app.routing.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/authentication/authentication.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/authentication/authentication.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  authentication works!\n</p>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/authentication/authentication.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenticationComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var AuthenticationComponent = (function () {
-    function AuthenticationComponent() {
-    }
-    AuthenticationComponent.prototype.ngOnInit = function () {
-    };
-    return AuthenticationComponent;
-}());
-AuthenticationComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-authentication',
-        template: __webpack_require__("../../../../../src/app/authentication/authentication.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/authentication/authentication.component.css")]
-    }),
-    __metadata("design:paramtypes", [])
-], AuthenticationComponent);
-
-//# sourceMappingURL=authentication.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/authentication/login/login.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/authentication/login/login.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"main-content\">\n  <div class=\"container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-md-12\">\n        <div class=\"card\">\n          <div class=\"card-header\" data-background-color=\"red\">\n            <h4 class=\"title\">Edit Profile</h4>\n            <p class=\"category\">Complete your profile</p>\n          </div>\n          <div class=\"card-content\">\n            <form>\n              <div class=\"row\">\n                <div class=\"col-md-5\">\n                  <div class=\"form-group form-black label-floating is-empty\">\n                    <label class=\"control-label\">Company (disabled)</label>\n                    <input type=\"text\" class=\"form-control\" disabled>\n                  </div>\n                </div>\n                <div class=\"col-md-3\">\n                  <div class=\"form-group form-black label-floating is-empty\">\n                    <label class=\"control-label\">Username</label>\n                    <input type=\"text\" class=\"form-control\" >\n                  </div>\n                </div>\n                <div class=\"col-md-4\">\n                  <div class=\"form-group form-black label-floating is-empty\">\n                    <label class=\"control-label\">Email address</label>\n                    <input type=\"email\" class=\"form-control\" >\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"row\">\n                <div class=\"col-md-6\">\n                  <div class=\"form-group form-black label-floating is-empty\">\n                    <label class=\"control-label\">Fist Name</label>\n                    <input type=\"text\" class=\"form-control\" >\n                  </div>\n                </div>\n                <div class=\"col-md-6\">\n                  <div class=\"form-group form-black label-floating is-empty\">\n                    <label class=\"control-label\">Last Name</label>\n                    <input type=\"text\" class=\"form-control\" >\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"row\">\n                <div class=\"col-md-12\">\n                  <div class=\"form-group form-black label-floating is-empty\">\n                    <label class=\"control-label\">Adress</label>\n                    <input type=\"text\" class=\"form-control\" >\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"row\">\n                <div class=\"col-md-4\">\n                  <div class=\"form-group form-black label-floating is-empty\">\n                    <label class=\"control-label\">City</label>\n                    <input type=\"text\" class=\"form-control\" >\n                  </div>\n                </div>\n                <div class=\"col-md-4\">\n                  <div class=\"form-group form-black label-floating is-empty\">\n                    <label class=\"control-label\">Country</label>\n                    <input type=\"text\" class=\"form-control\" >\n                  </div>\n                </div>\n                <div class=\"col-md-4\">\n                  <div class=\"form-group form-black label-floating is-empty\">\n                    <label class=\"control-label\">Postal Code</label>\n                    <input type=\"text\" class=\"form-control\" >\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"row\">\n                <div class=\"col-md-12\">\n                  <div class=\"form-group\">\n                    <label>About Me</label>\n                    <div class=\"form-group form-black label-floating is-empty\">\n                      <label class=\"control-label\"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>\n                      <textarea class=\"form-control\" rows=\"5\"></textarea>\n                    </div>\n                  </div>\n                </div>\n              </div>\n\n              <button type=\"submit\" class=\"btn btn-danger pull-right\">Update Profile</button>\n              <div class=\"clearfix\"></div>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/authentication/login/login.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var LoginComponent = (function () {
-    function LoginComponent() {
-    }
-    LoginComponent.prototype.ngOnInit = function () {
-    };
-    return LoginComponent;
-}());
-LoginComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-login',
-        template: __webpack_require__("../../../../../src/app/authentication/login/login.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/authentication/login/login.component.css")]
-    }),
-    __metadata("design:paramtypes", [])
-], LoginComponent);
-
-//# sourceMappingURL=login.component.js.map
 
 /***/ }),
 
@@ -432,7 +310,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<footer>\n    <div class=\"container-fluid\">\n        <nav class=\"pull-right\">\n            <ul>\n                <li>\n                    <a href=\"#\">\n                        Home\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        Company\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        Portfolio\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                       Blog\n                    </a>\n                </li>\n            </ul>\n        </nav>\n        <p class=\"copyright pull-left\">\n            &copy; {{test | date: 'yyyy'}} <a href=\"http://www.creative-tim.com\">Creative Tim</a>, made with love for a better web\n        </p>\n    </div>\n</footer>\n"
+module.exports = "<footer>\n    <div class=\"container-fluid\">\n        <nav class=\"pull-right\">\n            <ul>\n                <li>\n                    <a href=\"#\">\n                        صفحه اصلی\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        درباره برنامه\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        تماس با تیم سازنده\n                    </a>\n                </li>\n            </ul>\n        </nav>\n        <p class=\"copyright pull-left\">\n            {{test | date: 'yyyy'}} &copy;\n            کلیه حقوق این برنامه برای\n    <a href=\"#\"> تیم سازنده</a>\n            محفوظ می باشد.\n        </p>\n    </div>\n</footer>\n"
 
 /***/ }),
 
@@ -494,7 +372,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-transparent navbar-absolute\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" (click)=\"sidebarToggle()\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" href=\"#\">{{getTitle()}}</a>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-left\">\n                <li>\n                    <a href=\"#pablo\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                        <i class=\"material-icons\">person</i>\n                        <p class=\"hidden-lg hidden-md\">Profile</p>\n                    </a>\n                </li>\n                <li class=\"dropdown\">\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                        <i class=\"material-icons\">notifications</i>\n                        <span class=\"notification\">5</span>\n                        <p class=\"hidden-lg hidden-md\">Notifications</p>\n                    </a>\n                    <ul class=\"dropdown-menu\">\n                        <li><a href=\"#\">Mike John responded to your email</a></li>\n                        <li><a href=\"#\">You have 5 new tasks</a></li>\n                        <li><a href=\"#\">You're now friend with Andrew</a></li>\n                        <li><a href=\"#\">Another Notification</a></li>\n                        <li><a href=\"#\">Another One</a></li>\n                    </ul>\n                </li>\n                <li>\n                    <a href=\"#pablo\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                        <i class=\"material-icons\">dashboard</i>\n                        <p class=\"hidden-lg hidden-md\">Dashboard</p>\n                    </a>\n                </li>\n            </ul>\n\n            <form class=\"navbar-form navbar-left\" role=\"search\">\n                <div class=\"form-group form-black is-empty\">\n                    <input type=\"text\" class=\"form-control\" placeholder=\"جستجو\">\n                    <span class=\"material-input\"></span>\n                </div>\n                <button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n                    <i class=\"material-icons\">search</i><div class=\"ripple-container\"></div>\n                </button>\n            </form>\n        </div>\n    </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-transparent navbar-absolute\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" (click)=\"sidebarToggle()\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" href=\"#\">{{getTitle()}}</a>\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-left\">\n                <li>\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" title=\"پروفایل\">\n                        <i class=\"material-icons\">person</i>\n                        <p class=\"hidden-lg hidden-md\">Profile</p>\n                    </a>\n                    <ul class=\"dropdown-menu\">\n                        <li><a href=\"#\">تنظیمات</a></li>\n                        <li><a href=\"#\">خروج</a></li>\n                    </ul>\n                </li>\n                <li class=\"dropdown\">\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" title=\"نوتیفیکیشن\">\n                        <i class=\"material-icons\">notifications</i>\n                        <span class=\"notification\">4</span>\n                        <p class=\"hidden-lg hidden-md\">Notifications</p>\n                    </a>\n                    <ul class=\"dropdown-menu\">\n                        <li><a href=\"#\">نوتیفیکیشن 1</a></li>\n                        <li><a href=\"#\">نوتیفیکیشن 2</a></li>\n                        <li><a href=\"#\">نوتیفیکیشن 3</a></li>\n                        <li><a href=\"#\">نوتیفیکیشن 4</a></li>\n                    </ul>\n                </li>\n                <li>\n                    <a href=\"#\" title=\"صفحه اصلی\">\n                        <i class=\"material-icons\">home</i>\n                        <p class=\"hidden-lg hidden-md\">Dashboard</p>\n                    </a>\n                </li>\n            </ul>\n\n            <form class=\"navbar-form navbar-left\" role=\"search\">\n                <div class=\"form-group form-black is-empty\">\n                    <input type=\"text\" class=\"form-control\" placeholder=\"جستجو\">\n                    <span class=\"material-input\"></span>\n                </div>\n                <button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n                    <i class=\"material-icons\">search</i><div class=\"ripple-container\"></div>\n                </button>\n            </form>\n        </div>\n    </div>\n</nav>\n"
 
 /***/ }),
 
@@ -607,7 +485,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/sidebar/sidebar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"logo\">\n    <a href=\"https://www.creative-tim.com\" class=\"simple-text\">\n        <div class=\"logo-img\">\n            <img src=\"/assets/img/angular2-logo-red.png\"/>\n        </div>\n        Creative Tim\n    </a>\n</div>\n<div class=\"sidebar-wrapper\">\n    <form class=\"navbar-form navbar-left\" role=\"search\" *ngIf=\"isMobileMenu()\">\n        <div class=\"form-group form-black is-empty\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n            <span class=\"material-input\"></span>\n        </div>\n        <button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n            <i class=\"material-icons\">search</i><div class=\"ripple-container\"></div>\n        </button>\n    </form>\n\n    <ul class=\"nav nav-mobile-menu\" *ngIf=\"isMobileMenu()\">\n        <li>\n            <a href=\"#pablo\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                <i class=\"material-icons\">dashboard</i>\n                <p class=\"hidden-lg hidden-md\">Dashboard</p>\n            </a>\n        </li>\n        <li class=\"dropdown\">\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                <i class=\"material-icons\">notifications</i>\n                <span class=\"notification\">5</span>\n                <p class=\"hidden-lg hidden-md\">Notifications</p>\n            </a>\n            <ul class=\"dropdown-menu\">\n                <li><a href=\"#\">Mike John responded to your email</a></li>\n                <li><a href=\"#\">You have 5 new tasks</a></li>\n                <li><a href=\"#\">You're now friend with Andrew</a></li>\n                <li><a href=\"#\">Another Notification</a></li>\n                <li><a href=\"#\">Another One</a></li>\n            </ul>\n        </li>\n        <li>\n            <a href=\"#pablo\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n               <i class=\"material-icons\">person</i>\n               <p class=\"hidden-lg hidden-md\">Profile</p>\n            </a>\n        </li>\n    </ul>\n\n    <div class=\"nav-container\">\n        <ul class=\"nav\">\n            <li routerLinkActive=\"active\" *ngFor=\"let menuItem of menuItems\" class=\"{{menuItem.class}}\">\n                <a  [routerLink]=\"[menuItem.path]\">\n                    <i class=\"material-icons\">{{menuItem.icon}}</i>\n                    <p>{{menuItem.title}}</p>\n                </a>\n            </li>\n        </ul>\n    </div>\n</div>\n"
+module.exports = "<div class=\"logo\">\n    <a href=\"https://www.creative-tim.com\" class=\"simple-text\">\n        <div class=\"logo-img\">\n            <img src=\"/assets/img/angular2-logo-red.png\"/>\n        </div>\n        اسم ساختمان\n    </a>\n</div>\n<div class=\"sidebar-wrapper\">\n    <form class=\"navbar-form navbar-left\" role=\"search\" *ngIf=\"isMobileMenu()\">\n        <div class=\"form-group form-black is-empty\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n            <span class=\"material-input\"></span>\n        </div>\n        <button type=\"submit\" class=\"btn btn-white btn-round btn-just-icon\">\n            <i class=\"material-icons\">search</i><div class=\"ripple-container\"></div>\n        </button>\n    </form>\n\n    <ul class=\"nav nav-mobile-menu\" *ngIf=\"isMobileMenu()\">\n        <li>\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                <i class=\"material-icons\">home</i>\n                <p class=\"hidden-lg hidden-md\">صفحه اصلی</p>\n            </a>\n        </li>\n        <li class=\"dropdown\">\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                <i class=\"material-icons\">notifications</i>\n                <span class=\"notification\">4</span>\n                <p class=\"hidden-lg hidden-md\">نوتیفیکیشن</p>\n            </a>\n            <ul class=\"dropdown-menu\">\n                <li><a href=\"#\">نوتیفیکیشن 1</a></li>\n                <li><a href=\"#\">نوتیفیکیشن 2</a></li>\n                <li><a href=\"#\">نوتیفیکیشن 3</a></li>\n                <li><a href=\"#\">نوتیفیکیشن 4</a></li>\n            </ul>\n        </li>\n        <li>\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n               <i class=\"material-icons\">person</i>\n               <p class=\"hidden-lg hidden-md\">پروفایل</p>\n            </a>\n            <ul class=\"dropdown-menu\">\n                <li><a href=\"#\">تنظیمات</a></li>\n                <li><a href=\"#\">خروج</a></li>\n            </ul>\n        </li>\n    </ul>\n\n    <div class=\"nav-container\">\n        <ul class=\"nav\">\n            <li routerLinkActive=\"active\" *ngFor=\"let menuItem of menuItems\" class=\"{{menuItem.class}}\">\n                <a [routerLink]=\"[menuItem.path]\">\n                    <i class=\"material-icons\">{{menuItem.icon}}</i>\n                    <p>{{menuItem.title}}</p>\n                </a>\n            </li>\n        </ul>\n    </div>\n\n\n</div>\n"
 
 /***/ }),
 
@@ -630,13 +508,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ROUTES = [
     { path: 'dashboard', title: 'داشبورد', icon: 'dashboard', class: '' },
-    { path: 'user-profile', title: 'مشخصات واحدها', icon: 'person', class: '' },
-    { path: 'table-list', title: 'قسمت مالی ', icon: 'content_paste', class: '' },
-    { path: 'typography', title: 'پیام ها', icon: 'library_books', class: '' },
-    { path: 'icons', title: 'ایکون ها', icon: 'bubble_chart', class: '' },
-    { path: 'maps', title: 'نقشه', icon: 'location_on', class: '' },
-    { path: 'login', title: 'لاگین', icon: 'location_on', class: '' },
-    { path: 'notifications', title: 'Notifications', icon: 'notifications', class: '' },
+    { path: 'table-list', title: 'مشخصات ساختمان', icon: 'content_paste', class: '' },
+    { path: 'user-profile', title: 'ثبت و مشخصات واحدها', icon: 'person', class: '' },
+    { path: 'typography', title: 'ارتباط با مالکین', icon: 'library_books', class: '' },
+    { path: 'financial', title: 'مالی', icon: 'location_on', class: 'dropdown-toggle' },
+    { path: 'test', title: 'پرداختی ها', icon: 'location_on', class: '' },
+    { path: 'icons', title: 'اخبار و اطلاعیه', icon: 'bubble_chart', class: '' },
+    { path: 'maps', title: 'صدور رسید پرداخت', icon: 'location_on', class: '' },
+    { path: 'notifications', title: 'تعریف کاربر و سطح دسترسی', icon: 'notifications', class: '' },
 ];
 var SidebarComponent = (function () {
     function SidebarComponent() {
@@ -845,6 +724,67 @@ DashboardComponent = __decorate([
 ], DashboardComponent);
 
 //# sourceMappingURL=dashboard.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/financial/financial.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/financial/financial.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  financial works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/financial/financial.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FinancialComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FinancialComponent = (function () {
+    function FinancialComponent() {
+    }
+    FinancialComponent.prototype.ngOnInit = function () {
+    };
+    return FinancialComponent;
+}());
+FinancialComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-financial',
+        template: __webpack_require__("../../../../../src/app/financial/financial.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/financial/financial.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], FinancialComponent);
+
+//# sourceMappingURL=financial.component.js.map
 
 /***/ }),
 
